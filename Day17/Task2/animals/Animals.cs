@@ -22,15 +22,15 @@ namespace task2_animals
                 System.Console.WriteLine($"Имя животного: {name}\n Вид: {species}\n Возраст: {age}");
             }
         }
-        public class WildAnimal : Animal
+        public class WildAnimal : Animals
         {
-            public SchoolSchedule(int age, string species)
+            public WildAnimal(int age, string species)
             {
                 this.age = age;
                 this.species = species;
             }
             public string species;
-            public string age;
+            public int age;
 
             public override void Description()
             {
